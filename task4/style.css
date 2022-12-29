@@ -1,0 +1,45 @@
+h1{
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: pink;
+}
+.box{
+    text-align: center;
+    margin-top:30px 2px;
+}
+
+.box table button:hover{
+    background-color: rgb(144, 144, 137);
+    transition: 0s;
+}
+
+table{
+    margin: auto;
+}
+
+input{
+    border-radius: 10px;
+    border: 3px solid grey;
+    font-size:30px;
+    height: 50px;
+    width: 430px;
+}
+
+button{
+    border-radius: 50px;
+    font-size: 40px;
+    background: #e4dfe9;
+    width: 102px;
+    height: 90px;
+    margin: 2px;
+}
+
+.calculator{ 
+    border: 3px solid black;
+    background-color: green;
+    padding: 15px;
+    border-radius: 50px;
+    display: inline-block;
+}
