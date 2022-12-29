@@ -1,0 +1,118 @@
+/* this page will do styling by using css */
+  body {
+    background-image: linear-gradient(150deg, pink 10%, grey 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 1rem;
+    color:rgb(106, 3, 85);
+  }
+  
+  header,
+  form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  form input,
+  form button {
+    padding: 0.2rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+  }
+  form button {
+    color: palevioletred;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form button:hover {
+    background: palevioletred;
+    color: white;
+  }
+  .todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .todo-list {
+    min-width: 40%;
+    list-style: none;
+  }
+  
+  .todo {
+    margin: 0.6rem;
+    background: white;
+    font-size: 1.5rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+  }
+  .filter-todo {
+    padding: 1rem;
+  }
+  .todo li {
+    flex: 1;
+  }
+  
+  .trash-btn,
+  .complete-btn {
+    background: #ad40ad;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .complete-btn {
+    background: rgb(250, 112, 61);
+  }
+  .todo-item {
+    padding: 0rem 0.5rem;
+  }
+  
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  .fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+  }
+  
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  
+  /* Custom Select */
+  .select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+  }
+  select {
+    color:rgb(153, 136, 136);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    cursor: pointer;
+    width: 11rem;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgb(157, 85, 216);
+    cursor: pointer;
+    pointer-events: none;
+  }
