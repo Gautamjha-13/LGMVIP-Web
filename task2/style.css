@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: pink;
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 10px;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background-color: rgb(217, 76, 76);
+  }
+  
+  .logo-text a,
+  .button {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .button {
+    font-size: 1.3em;
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease 0s;
+    color:black
+  }
+  
+  .button:hover {
+    background-color: rgba(128, 128, 128, 0.921);
+  }
+  
+  .cards {
+    display: table;
+  }
+
+  .card {
+    font-family: "Candara", sans-serif;
+    width: 340px;
+    overflow: hidden;
+    background: rgb(220, 192, 183);
+    box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.8);
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 3rem;
+    margin: 2rem;
+  }
+  
+  .card-image img {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .profile-image img {
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-top: -85px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  
+  .profile-image img:hover {
+    transform: scale(1.1);
+  }
+  
+  .card-content h3,
+  .card-content h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 11px;
+  }
+  .card-content h2{
+  color: #445561;
+  text-decoration: underline;
+  }
+  
